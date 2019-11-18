@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoPRO</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="category_prompt">Choose a category</string>
+
+    <string-array name="category_arrays">
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Electronics</item>
+        <item>Cleaning</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>
