@@ -4,31 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Product"
-        android:textAlignment="center"
-        android:textSize="50sp"
-        android:id="@+id/tvInnerTitle"/>
-
     <EditText
         android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Title" />
+        android:hint="@string/title_hint" />
 
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description" />
+        android:hint="@string/description_hint" />
 
     <EditText
         android:id="@+id/etPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Estimated Price $"
+        android:hint="@string/estimated_price_hint"
         android:inputType="number" />
 
     <LinearLayout
@@ -39,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category: "/>
+            android:text="@string/category_text"/>
 
         <Spinner
             android:id="@+id/spnCategory"

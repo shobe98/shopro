@@ -30,7 +30,7 @@ class ProductDialog : DialogFragment() {
             productHandler = context
         } else {
             throw RuntimeException(
-                "The activity does not implement the ProductHandlerInterface"
+                getString(R.string.error_product_handler)
             )
         }
     }
@@ -48,10 +48,10 @@ class ProductDialog : DialogFragment() {
         }
 
         if(isEditMode) {
-            builder.setTitle("Edit product")
+            builder.setTitle(getString(R.string.edit_product))
         }
         else {
-            builder.setTitle("New product")
+            builder.setTitle(getString(R.string.new_product))
         }
 
         val rootView = requireActivity().layoutInflater.inflate(
@@ -65,7 +65,6 @@ class ProductDialog : DialogFragment() {
         builder.setView(rootView)
 
         if(isEditMode) {
-            rootView.tvInnerTitle.text = "Edit"
 
             var product = (arguments?.getSerializable(MainActivity.KEY_PRODUCT) as Product)
 
@@ -75,7 +74,7 @@ class ProductDialog : DialogFragment() {
             spnProductCategory.setSelection(product.category.ordinal)
         }
 
-        builder.setPositiveButton("OK") { dialog, witch ->
+        builder.setPositiveButton(getString(R.string.ok)) { dialog, witch ->
             // empty
         }
 
@@ -91,7 +90,7 @@ class ProductDialog : DialogFragment() {
                 etProductDescription.setText("")
             }
             if(etProductPrice.text.isEmpty()) {
-                etProductPrice.setText("0")
+                etProductPrice.setText(getString(R.string.zero))
             }
 
 
@@ -105,7 +104,7 @@ class ProductDialog : DialogFragment() {
 
                 (dialog as AlertDialog).dismiss()
             } else {
-                etProductTitle.error = "This field can not be empty"
+                etProductTitle.error = getString(R.string.error_empty_field)
             }
         }
     }

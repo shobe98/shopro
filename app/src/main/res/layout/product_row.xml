@@ -40,7 +40,7 @@
             android:layout_height="0dp"
             android:autoSizeMaxTextSize="30sp"
             android:autoSizeTextType="uniform"
-            android:text="title"
+
             android:textSize="30sp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/ivRowIcon"
@@ -54,7 +54,7 @@
             android:layout_height="0dp"
             android:autoSizeMaxTextSize="20sp"
             android:autoSizeTextType="uniform"
-            android:text="000"
+            android:text="@string/zero"
             android:textSize="20sp"
             card_view:layout_constraintBottom_toBottomOf="@+id/cbProduct"
             card_view:layout_constraintEnd_toStartOf="@+id/cbProduct"
@@ -67,7 +67,6 @@
             android:layout_height="0dp"
             android:autoSizeMaxTextSize="15sp"
             android:autoSizeTextType="uniform"
-            android:text="one word one wordone wordone wordone wordone wordone wordone wordone wordone wordone wordone wordone word"
             android:textSize="15sp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toStartOf="@+id/btnDelete"
@@ -78,7 +77,7 @@
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"
+            android:text="@string/delete"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent" />
 
@@ -87,7 +86,7 @@
             android:id="@+id/btnEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edit"
+            android:text="@string/edit"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="@+id/ivRowIcon"
             card_view:layout_constraintStart_toStartOf="@+id/ivRowIcon"
